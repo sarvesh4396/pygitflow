@@ -26,4 +26,4 @@ jobs:
       - name: Publish to PyPI
         env:
           TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-        run: twine upload dist/* -p ${{ secrets.PYPI_PASSWORD }}
+        run: uv run twine upload dist/* -p "$TWINE_PASSWORD"
