@@ -1,5 +1,5 @@
 [project]
-name = "pygitflow"
+name = "pygitmate"
 version = "0.1.0"
 description = "A CLI tool to simplify Git workflows"
 readme = "README.md"
@@ -21,8 +21,8 @@ keywords = ["git", "cli", "developer-tools"]
 
 
 [project.scripts]
-gflow = "pygitflow.main:cli"
-pygitflow = "pygitflow.main:cli"
+gmate = "pygitmate.main:cli"
+pygitmate = "pygitmate.main:cli"
 
 
 [build-system]
@@ -36,4 +36,5 @@ include = ["main.py"]
 [tool.uv]
 dev-dependencies = [
     "ruff>=0.6.9",
+    "twine>=6.0.1",
 ]

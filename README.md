@@ -1,13 +1,13 @@
-# pygitflow
+# pygitmate
 
-[![PyPI version](https://badge.fury.io/py/pygitflow.svg)](https://badge.fury.io/py/pygitflow)  
+[![PyPI version](https://badge.fury.io/py/pygitmate.svg)](https://badge.fury.io/py/pygitmate)  
 A lightweight, experimental CLI tool to simplify Git workflows, crafted out of necessity for developers(especially me ;).
 
 ---
 
 ## 🚀 Features
 
-`pygitflow` is a developer-focused Git CLI tool designed to streamline common Git operations while maintaining flexibility.  
+`pygitmate` is a developer-focused Git CLI tool designed to streamline common Git operations while maintaining flexibility.  
 
 - **Branch Management**  
   - Create branches for features, hotfixes, enhancements, and more.
@@ -32,13 +32,13 @@ This (new) tool is in its **experimental phase** and was built out of the need f
 
 ## 📥 Installation
 
-You can install `pygitflow` via pip:
+You can install `pygitmate` via pip:
 
 ```bash
-pip install pygitflow
+pip install pygitmate
 ```
 
-Can be used via cli with alias `gflow` as well (`gflow new-branch`):
+Can be used via cli with alias `gmate` as well (`gmate new-branch`):
 
 ---
 
@@ -47,7 +47,7 @@ Can be used via cli with alias `gflow` as well (`gflow new-branch`):
 ### General Usage
 
 ```bash
-pygitflow [COMMAND]
+pygitmate [COMMAND]
 ```
 
 ### Available Commands
@@ -55,7 +55,7 @@ pygitflow [COMMAND]
 #### 1. Create a New Branch
 
 ```bash
-pygitflow new-branch
+pygitmate new-branch
 ```
 
 Interactive flow for creating a branch:
@@ -66,7 +66,7 @@ Interactive flow for creating a branch:
 #### 2. Commit Changes
 
 ```bash
-pygitflow commit
+pygitmate commit
 ```
 
 Helps you create standardized commit messages:
@@ -76,7 +76,7 @@ Helps you create standardized commit messages:
 #### 3. Merge Branches
 
 ```bash
-pygitflow merge [TARGET_BRANCH]
+pygitmate merge [TARGET_BRANCH]
 ```
 
 Merge the current branch into a target branch:
@@ -90,7 +90,7 @@ Merge the current branch into a target branch:
 ### Creating a New Branch
 
 ```bash
-pygitflow new-branch
+pygitmate new-branch
 ```
 
 Example Interaction:
@@ -107,7 +107,7 @@ Enter branch name (without spaces): feature_x
 ### Committing Changes
 
 ```bash
-pygitflow commit
+pygitmate commit
 ```
 
 Example Interaction:
@@ -123,7 +123,7 @@ Enter a concise summary of your changes: Added login functionality
 ### Merging Branches
 
 ```bash
-pygitflow merge
+pygitmate merge
 ```
 
 Example Interaction:
@@ -157,7 +157,7 @@ Successfully merged 'main' into 'feature/login'.
 
 ## 🤝 Contributions
 
-Since `pygitflow` is experimental, contributions, feature suggestions, and issue reports are highly welcome. Fork this repository and submit a pull request to improve the tool.
+Since `pygitmate` is experimental, contributions, feature suggestions, and issue reports are highly welcome. Fork this repository and submit a pull request to improve the tool.
 
 ---
 
@@ -176,4 +176,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## ⚡ Acknowledgments
 
-`pygitflow` was created out of a need for simplifying repetitive Git tasks and improving efficiency in workflows. Inspired by the challenges faced during development, this tool is a handy companion for developers who work extensively with Git.
+`pygitmate` was created out of a need for simplifying repetitive Git tasks and improving efficiency in workflows. Inspired by the challenges faced during development, this tool is a handy companion for developers who work extensively with Git.
