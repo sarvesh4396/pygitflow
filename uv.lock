@@ -358,7 +358,7 @@ wheels = [
 ]
 
 [[package]]
-name = "pygitflow"
+name = "pygitmate"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

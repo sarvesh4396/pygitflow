@@ -2,8 +2,8 @@ import click
 from git import GitCommandError
 from rich.prompt import Prompt
 
-from pygitmate.utils import choose_option, get_branches, get_repo, get_timestamp
-from pygitmate.console import console
+from .utils import choose_option, get_branches, get_repo, get_timestamp
+from .console import console
 
 
 # Dynamic options for branch and commit types
