@@ -18,13 +18,12 @@ jobs:
           python-version: "3.11"
 
       - name: Install Dependencies
-        run: pip install hatch twine
+        run: pip install uv && uv sync
 
       - name: Build Package
-        run: hatch build
+        run: uv build
 
       - name: Publish to PyPI
         env:
-          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-        run: twine upload dist/*
+        run: twine upload dist/* -p ${{ secrets.PYPI_PASSWORD }}
