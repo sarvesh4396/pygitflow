@@ -25,8 +25,13 @@ jobs:
 
       - name: Debug Secret
         env:
-          DEMO: ${{secrets.DEMO}}
-        run: echo  ${{secrets.DEMO}}
+          DEMO: ${{ secrets.DEMO }}
+        run: |
+          if [ -z "$DEMO" ]; then
+            echo "Secret is not set."
+          else
+            echo "Secret is set."
+          fi
 
       - name: Publish to PyPI
         env:
