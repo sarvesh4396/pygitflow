@@ -1,6 +1,6 @@
 [project]
 name = "pygitmate"
-version = "0.1.0"
+version = "0.1.2"
 description = "A CLI tool to simplify Git workflows"
 readme = "README.md"
 authors = [{ name = "Sarvesh Kumar Dwivedi", email = "heysarvesh@pm.me" }]
@@ -17,7 +17,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.12",
 ]
-keywords = ["git", "cli", "developer-tools"]
+keywords = ["git", "cli", "developer-tools", "agile"]
 
 
 [project.scripts]
@@ -36,5 +36,4 @@ include = ["main.py"]
 [tool.uv]
 dev-dependencies = [
     "ruff>=0.6.9",
-    "twine>=6.0.1",
 ]
