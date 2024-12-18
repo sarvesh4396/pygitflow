@@ -26,7 +26,7 @@ jobs:
       - name: Debug Secret
         env:
           DEMO: ${{secrets.DEMO}}
-        run: echo  $DEMO
+        run: echo  ${{secrets.DEMO}}
 
       - name: Publish to PyPI
         env:
