@@ -23,6 +23,11 @@ jobs:
       - name: Build Package
         run: uv build
 
+      - name: Debug Secret
+        env:
+          DEMO: ${{secrets.DEMO}}
+        run: echo  $DEMO
+
       - name: Publish to PyPI
         env:
           UV_PUBLISH_TOKEN: ${{ secrets.UV_PUBLISH_TOKEN }}
