@@ -1,6 +1,6 @@
 [project]
 name = "pygitmate"
-version = "0.1.2"
+version = "0.1.3"
 description = "A CLI tool to simplify Git workflows"
 readme = "README.md"
 authors = [{ name = "Sarvesh Kumar Dwivedi", email = "heysarvesh@pm.me" }]
@@ -19,6 +19,10 @@ classifiers = [
 ]
 keywords = ["git", "cli", "developer-tools", "agile"]
 
+[project.urls]
+homepage = "https://github.com/sarvesh4396/pygitmate"
+repository = "https://github.com/sarvesh4396/pygitmate"
+documentation = "https://pypi.org/project/pygitmate/"
 
 [project.scripts]
 gmate = "pygitmate.main:cli"
